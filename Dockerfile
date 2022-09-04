@@ -10,4 +10,4 @@ RUN mv i.mp3 mp3/i.mp3
 ENV HOME /root
 WORKDIR /root
 
-CMD ["bash /root/stream.sh"]
+CMD ["bash stream.sh"]
