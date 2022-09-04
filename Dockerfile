@@ -6,7 +6,7 @@ RUN apt install -y ffmpeg
 RUN wget https://transfer.nischay.ovh/get/PVfPHezGg2P1/i.mp3
 RUN mkdir mp3
 RUN mv i.mp3 mp3/i.mp3
-
+ENTRYPOINT [ "bash", "stream.sh" ]
 ENV HOME /root
 WORKDIR /root
 
