@@ -1,12 +1,11 @@
-FROM alpine:3
+FROM ubuntu:20.04
 
-RUN apk add --no-cache bash ffmpeg
+RUN apt update
+RUN apt install -y ffmpeg
 RUN wget https://transfer.nischay.ovh/get/PVfPHezGg2P1/i.mp3
 RUN mkdir mp3
 RUN mv i.mp3 /mp3
 
-RUN mkdir /usr/src/app -p
-WORKDIR /usr/src/app/
+COPY start.sh /start.sh 
 
-ADD . /usr/src/app
-CMD ./stream.sh
+CMD ["./start.sh"]
