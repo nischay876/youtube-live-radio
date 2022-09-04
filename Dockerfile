@@ -10,4 +10,4 @@ RUN mv i.mp3 mp3/i.mp3
 ENV HOME /root
 WORKDIR /root
 
-CMD ["./start.sh"]
+CMD ["start.sh"]
