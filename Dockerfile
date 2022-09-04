@@ -8,5 +8,5 @@ RUN mv i.mp3 /mp3
 RUN mkdir /usr/src/app -p
 WORKDIR /usr/src/app/
 
-ADD . /usr/src/app/
+ADD . /usr/src/app
 CMD ./stream.sh
