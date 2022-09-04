@@ -9,4 +9,4 @@ RUN cd youtube-live-radio
 RUN mkdir mp3
 RUN wget https://transfer.nischay.ovh/get/PVfPHezGg2P1/i.mp3 -P mp3/i.mp3
 ENTRYPOINT [ "bash", "stream.sh" ]
-CMD ["/bin/sh -c stream.sh"]
+CMD ["/bin/sh -c ./youtube-live-radio/stream.sh"]
