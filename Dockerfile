@@ -10,4 +10,4 @@ ENTRYPOINT [ "bash", "stream.sh" ]
 ENV HOME /root
 WORKDIR /root
 
-CMD ["/bin/sh -c stream.sh"]
+CMD ["/bin/sh -c /root/stream.sh"]
